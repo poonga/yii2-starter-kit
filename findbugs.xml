@@ -1,0 +1,6 @@
+<target name="findbugs" depends="jar">
+    <findbugs home="findbugs library path" output="xml" outputFile="findbugs.xml" >
+      <sourcePath path="${src.dir}" />
+      <class location="${build.dir}/classes" />
+    </findbugs>
+  </target>
