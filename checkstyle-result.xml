@@ -1,6 +1,4 @@
-<target name="checkstyle" description="Generates a report of code convention violations.">
-<checkstyleconfig="sun_checks.xml"  failOnViolation="false">
-<formatter type="xml" tofile="checkstyle_report.xml"/>
-<filesetdir="src" includes="**/*.php"/>
-</checkstyle>
-</target>
+<fileset dir="${server.src}" casesensitive="yes">
+  <include name="**/*.php"/>
+  <exclude name="**/*Test*"/>
+</fileset>
